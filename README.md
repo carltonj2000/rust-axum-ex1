@@ -11,11 +11,12 @@ cargo watch -q -c -w tests/ -x "test -q quick_dev -- --nocapture" # client / tes
 ```bash
 cargo new rust-axum-ex1
 cd rust-axum-ex1/
-cargo add tokio # add features all to toml
-cargo update
+cargo add tokio -F full
 cargo add axum
 cargo add --dev httpc-test
 cargo add --dev anyhow
+cargo add serde -F derive
+cargo add serde_json
 ```
 
 ## Code History
